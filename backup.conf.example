@@ -1,0 +1,18 @@
+# backup.conf — configuration for muse-auto-backup
+# Copy to backup.conf (setup.sh does this) and fill in.
+
+# GitHub owner (user or org) that owns the backup repo
+REPO_OWNER=irfanbm
+
+# Backup repo name, format: muse-<email-name>
+REPO_NAME=muse-irfanbm03
+
+# BACKUP_MODE: all | selective
+#   all       = sync every top-level ~/workspace/ folder (minus exclusions)
+#   selective = sync only the folders listed in SELECTIVE_DIRS
+BACKUP_MODE=selective
+
+# Space-separated workspace folders (relative to ~/workspace), used when
+# BACKUP_MODE=selective. Example:
+# SELECTIVE_DIRS="goals memory x-grafisify crypto-spot-trader"
+SELECTIVE_DIRS="goals memory"
